@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed": "#001c39",
+              "on-surface-variant": "#c1c6d7",
+              "inverse-primary": "#0060ab",
+              "on-background": "#e2e2e6",
+              "on-tertiary-fixed": "#001f2a",
+              "on-secondary-fixed": "#341100",
+              "secondary-container": "#fd6c00",
+              "on-error-container": "#ffdad6",
+              "on-tertiary": "#163440",
+              "error": "#ffb4ab",
+              "surface-variant": "#333538",
+              "tertiary": "#adcbda",
+              "background": "#111316",
+              "tertiary-fixed": "#c9e7f7",
+              "primary-container": "#1493ff",
+              "on-primary-fixed-variant": "#004883",
+              "inverse-on-surface": "#2f3034",
+              "surface-container-high": "#282a2d",
+              "on-secondary": "#562000",
+              "on-primary": "#00315d",
+              "surface-tint": "#a3c9ff",
+              "surface-container": "#1e2023",
+              "on-secondary-container": "#562000",
+              "surface-dim": "#111316",
+              "primary": "#a3c9ff",
+              "outline-variant": "#414754",
+              "on-primary-container": "#002a51",
+              "surface": "#111316",
+              "tertiary-container": "#7895a3",
+              "primary-fixed-dim": "#a3c9ff",
+              "on-surface": "#e2e2e6",
+              "outline": "#8b90a0",
+              "error-container": "#93000a",
+              "inverse-surface": "#e2e2e6",
+              "on-tertiary-container": "#0e2d39",
+              "secondary-fixed": "#ffdbcb",
+              "secondary-fixed-dim": "#ffb692",
+              "surface-container-highest": "#333538",
+              "secondary": "#ffb692",
+              "surface-bright": "#37393d",
+              "on-secondary-fixed-variant": "#7a3000",
+              "tertiary-fixed-dim": "#adcbda",
+              "on-error": "#690005",
+              "primary-fixed": "#d3e3ff",
+              "surface-container-lowest": "#0c0e11",
+              "surface-container-low": "#1a1c1f",
+              "on-tertiary-fixed-variant": "#2e4b57"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #111316;
+            background-image: 
+                linear-gradient(rgba(30, 32, 35, 0.2) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(30, 32, 35, 0.2) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .glass-panel {
+            background: rgba(30, 32, 35, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body text-on-surface antialiased pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full flex justify-between items-center px-6 h-16 bg-[#111316] dark:bg-[#111316] z-50">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#a3c9ff]" data-icon="precision_manufacturing">precision_manufacturing</span>
+<h1 class="font-headline tracking-[0.05em] uppercase text-sm font-bold text-[#a3c9ff]">KINETIC_MONOLITH_OS</h1>
+</div>
+<div class="flex items-center">
+<button class="p-2 hover:bg-[#1e2023] transition-colors active:scale-95 duration-200 rounded-lg">
+<span class="material-symbols-outlined text-[#e2e2e6] opacity-70" data-icon="settings_input_component">settings_input_component</span>
+</button>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<section class="mb-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<p class="font-headline text-primary uppercase tracking-widest text-xs font-bold mb-2">Industrial Interface v4.2</p>
+<h2 class="font-headline text-4xl md:text-6xl font-bold text-on-surface tracking-tighter leading-none">
+                        Digital Twin <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-container">Showroom</span>
+</h2>
+</div>
+<div class="w-full md:w-96">
+<div class="relative group">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline" data-icon="search">search</span>
+<input class="w-full bg-surface-container-lowest border-none border-b border-outline/30 focus:ring-0 focus:border-primary text-sm font-headline tracking-wider py-4 pl-12 pr-4 rounded-lg transition-all" placeholder="QUERY SYSTEM ARCHIVE..." type="text"/>
+</div>
+</div>
+</div>
+</section>
+<!-- 3D-like Carousel Section -->
+<section class="relative overflow-hidden py-10">
+<div class="flex gap-8 overflow-x-auto pb-12 snap-x no-scrollbar">
+<!-- Model 1: Titan 5000 -->
+<div class="min-w-[320px] md:min-w-[480px] snap-center">
+<div class="glass-panel border border-outline-variant/20 rounded-xl overflow-hidden group">
+<div class="relative h-[400px] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-tech heavy industrial screen printing press with metallic surfaces and digital displays in a dark warehouse" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT15dftcNJYoX2fTRcyWd5OskobsOGAHcKErgQtCmW1e_vH1hCc2zwP62zVy2I_cv5wgXH1ipgtvLm_HQpulKrlzo0aJ8PyTFL-5AAuQeFDGIg5voExELBGLcY1t3DsdXczYaDU-uV-clSTQ5x57OF-ev55eKEJVYWl5RifjKNmuxLUAcNxId1FrgSywf3CcCXAedCnDVkTqpHybzSqwFJWMBE0owBYwmZQaK-woi3gJieAlhMM0xPpGWz0H0QrKEtL4jXbFvFVvew"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute top-6 left-6">
+<span class="bg-primary/20 text-primary text-[10px] font-bold tracking-[0.2em] px-3 py-1 rounded-full border border-primary/30 backdrop-blur-md">SERIES_T</span>
+</div>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline text-2xl font-bold text-on-surface">Titan 5000</h3>
+<p class="text-xs font-label text-outline uppercase tracking-widest mt-1">High-Precision Servo Unit</p>
+</div>
+<div class="text-right">
+<p class="text-[10px] font-headline text-outline mb-1">OPERATIONAL LOAD</p>
+<p class="font-headline text-primary font-bold">98.4%</p>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-4 mb-8">
+<div class="bg-surface-container-low p-3 rounded">
+<p class="text-[8px] text-outline-variant font-bold uppercase mb-1">Cyc/Hr</p>
+<p class="font-headline text-sm font-bold">1,200</p>
+</div>
+<div class="bg-surface-container-low p-3 rounded">
+<p class="text-[8px] text-outline-variant font-bold uppercase mb-1">Plt/Size</p>
+<p class="font-headline text-sm font-bold">80x120</p>
+</div>
+<div class="bg-surface-container-low p-3 rounded">
+<p class="text-[8px] text-outline-variant font-bold uppercase mb-1">Energy</p>
+<p class="font-headline text-sm font-bold">4.2kW</p>
+</div>
+</div>
+<button class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold py-4 rounded-lg flex items-center justify-center gap-2 hover:shadow-[0_0_20px_rgba(20,147,255,0.4)] transition-all active:scale-95">
+                                VIEW DETAILS
+                                <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Model 2: Solaris Pro -->
+<div class="min-w-[320px] md:min-w-[480px] snap-center">
+<div class="glass-panel border border-outline-variant/20 rounded-xl overflow-hidden group">
+<div class="relative h-[400px] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Sleek modern robotic arm for industrial screen printing with laser guidance glowing in a futuristic dark setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL07MfEe1wu7bjedo3xP6dU__d_W4Sq40ix8M6t9vsQjsmbHUmbEp_5LKxNNfEvdLwCrPjuvdMqRE3t37iv-UcQQMg3tyc70qKjOa-hjTQfL-p7umyHtZVG4tRLLaRdAGjIv_JyYKUJ54cuHaTLixkuGt_5fH4jGP1tFCO_3rMMVKP4rZIjs39uW4PsKZksRFPfuojDTlG19hncwqzHhNmJhpdnZJXERsrphY0VdruVY_T7NVXyCLa6nGmVMlSCW1GifwOPxSjutGt"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute top-6 left-6">
+<span class="bg-secondary/20 text-secondary text-[10px] font-bold tracking-[0.2em] px-3 py-1 rounded-full border border-secondary/30 backdrop-blur-md">PRO_ELITE</span>
+</div>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline text-2xl font-bold text-on-surface">Solaris Pro</h3>
+<p class="text-xs font-label text-outline uppercase tracking-widest mt-1">Multi-Head UV Synchronizer</p>
+</div>
+<div class="text-right">
+<p class="text-[10px] font-headline text-outline mb-1">UV INTENSITY</p>
+<p class="font-headline text-secondary font-bold">12.5kW</p>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-4 mb-8">
+<div class="bg-surface-container-low p-3 rounded">
+<p class="text-[8px] text-outline-variant font-bold uppercase mb-1">Heads</p>
+<p class="font-headline text-sm font-bold">12 Axis</p>
+</div>
+<div class="bg-surface-container-low p-3 rounded">
+<p class="text-[8px] text-outline-variant font-bold uppercase mb-1">Color</p>
+<p class="font-headline text-sm font-bold">CMYK+</p>
+</div>
+<div class="bg-surface-container-low p-3 rounded">
+<p class="text-[8px] text-outline-variant font-bold uppercase mb-1">Speed</p>
+<p class="font-headline text-sm font-bold">35m/m</p>
+</div>
+</div>
+<button class="w-full bg-surface-container-high text-on-surface border border-outline-variant/30 font-headline font-bold py-4 rounded-lg flex items-center justify-center gap-2 hover:bg-surface-bright transition-all active:scale-95">
+                                VIEW DETAILS
+                                <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Model 3: Nexus Gen-X -->
+<div class="min-w-[320px] md:min-w-[480px] snap-center">
+<div class="glass-panel border border-outline-variant/20 rounded-xl overflow-hidden group">
+<div class="relative h-[400px] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Interior of a large precision manufacturing machine with chrome gears and blue diagnostic light beams" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnqoEClV7sLb3Q4rxwMTOH5fEFT7zm29oSDbbMxlCbSHkslkE7DCd_N3Xy6xqVj3e05Dea2qN5b0mpmAqkyuK_OGnoYPQ5MzwEAzjv3s614uOKMm3rlMdy0H1jeBkx7ZDAQO-rhnl_1RH93mMu9U_6Tvq_I-djZdDSfCf1b95-e6V6OzE1DQ7g_BxufIXRbHVoGVKnI2a1L_6DfHvr8LXcgezYcW9lkS6RO4-FEUOQCurc7Ln54t3fvQCriCiz7e0jhSnPXGQjVns6"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute top-6 left-6">
+<span class="bg-tertiary/20 text-tertiary text-[10px] font-bold tracking-[0.2em] px-3 py-1 rounded-full border border-tertiary/30 backdrop-blur-md">NEXUS_CORE</span>
+</div>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline text-2xl font-bold text-on-surface">Nexus Gen-X</h3>
+<p class="text-xs font-label text-outline uppercase tracking-widest mt-1">AI-Driven Pattern Alignment</p>
+</div>
+<div class="text-right">
+<p class="text-[10px] font-headline text-outline mb-1">AI PRECISION</p>
+<p class="font-headline text-tertiary font-bold">0.001mm</p>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-4 mb-8">
+<div class="bg-surface-container-low p-3 rounded">
+<p class="text-[8px] text-outline-variant font-bold uppercase mb-1">Vision</p>
+<p class="font-headline text-sm font-bold">8K Scan</p>
+</div>
+<div class="bg-surface-container-low p-3 rounded">
+<p class="text-[8px] text-outline-variant font-bold uppercase mb-1">Latency</p>
+<p class="font-headline text-sm font-bold">2ms</p>
+</div>
+<div class="bg-surface-container-low p-3 rounded">
+<p class="text-[8px] text-outline-variant font-bold uppercase mb-1">Safety</p>
+<p class="font-headline text-sm font-bold">CAT 4</p>
+</div>
+</div>
+<button class="w-full bg-surface-container-high text-on-surface border border-outline-variant/30 font-headline font-bold py-4 rounded-lg flex items-center justify-center gap-2 hover:bg-surface-bright transition-all active:scale-95">
+                                VIEW DETAILS
+                                <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Carousel Progress Indicator -->
+<div class="flex justify-center gap-2 mt-4">
+<div class="w-12 h-1 bg-primary rounded-full"></div>
+<div class="w-4 h-1 bg-surface-container-highest rounded-full"></div>
+<div class="w-4 h-1 bg-surface-container-highest rounded-full"></div>
+</div>
+</section>
+<!-- Technical Specs Ticker -->
+<section class="mt-12">
+<div class="bg-surface-container-lowest border border-outline-variant/10 rounded-lg p-4 flex items-center gap-8 overflow-hidden">
+<div class="flex items-center gap-2 shrink-0">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<p class="text-[10px] font-headline font-bold text-outline uppercase tracking-widest">Live Telemetry</p>
+</div>
+<div class="flex gap-12 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<p class="text-[10px] text-outline-variant font-bold">CORE_TEMP:</p>
+<p class="font-headline text-xs font-bold text-primary">42.8°C</p>
+</div>
+<div class="flex items-center gap-2">
+<p class="text-[10px] text-outline-variant font-bold">THROUGHPUT:</p>
+<p class="font-headline text-xs font-bold text-primary">844 UNIT/HR</p>
+</div>
+<div class="flex items-center gap-2">
+<p class="text-[10px] text-outline-variant font-bold">NETWORK:</p>
+<p class="font-headline text-xs font-bold text-primary">STABLE [5G]</p>
+</div>
+<div class="flex items-center gap-2">
+<p class="text-[10px] text-outline-variant font-bold">UPTIME:</p>
+<p class="font-headline text-xs font-bold text-primary">2,412 HRS</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-[#111316]/80 backdrop-blur-xl border-t border-[#1e2023]/30 z-50 shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
+<a class="flex flex-col items-center justify-center text-[#a3c9ff] bg-[#1e2023] rounded-lg py-1 px-3 shadow-[0_0_15px_rgba(20,147,255,0.2)]" href="#">
+<span class="material-symbols-outlined" data-icon="view_in_ar">view_in_ar</span>
+<span class="font-['Space_Grotesk'] text-[10px] font-bold tracking-widest mt-1">SHOWROOM</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#e2e2e6] opacity-40 hover:opacity-100 transition-all hover:text-[#a3c9ff]" href="#">
+<span class="material-symbols-outlined" data-icon="layers">layers</span>
+<span class="font-['Space_Grotesk'] text-[10px] font-bold tracking-widest mt-1">DETAIL</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#e2e2e6] opacity-40 hover:opacity-100 transition-all hover:text-[#a3c9ff]" href="#">
+<span class="material-symbols-outlined" data-icon="view_in_ar">view_in_ar</span>
+<span class="font-['Space_Grotesk'] text-[10px] font-bold tracking-widest mt-1">AR_SYNC</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#e2e2e6] opacity-40 hover:opacity-100 transition-all hover:text-[#a3c9ff]" href="#">
+<span class="material-symbols-outlined" data-icon="hub">hub</span>
+<span class="font-['Space_Grotesk'] text-[10px] font-bold tracking-widest mt-1">HUB</span>
+</a>
+</nav>
+</body></html>
